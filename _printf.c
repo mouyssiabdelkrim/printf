@@ -3,7 +3,6 @@
  * _printf - function that prints based on specified input type
  * @format: specifier argument
  * Return: no fo characters printed
- * Done by Jacob and Abdelkrim
  */
 int _printf(const char * const format, ...)
 {
@@ -42,6 +41,7 @@ int _printf(const char * const format, ...)
                 length++;
                 k++;
         }
+
         va_end(args);
         return (length);
 }
