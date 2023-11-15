@@ -1,4 +1,4 @@
-#includi "main.h"
+#include "main.h"
 /**
  * _printf - function that prints based on specified input type
  * @format: specifier argument
@@ -24,7 +24,7 @@ int _printf(const char * const format, ...)
         va_start(args, format);
         if (format == NULL || (format[0] == '%' && format[1] == '\0'))
                 return (-1);
-
+Jump:
         while (format[k] != '\0')
         {
                 m = 13;
@@ -34,6 +34,7 @@ int _printf(const char * const format, ...)
                         {
                                 length += p[m].function(args);
                                 k = k + 2;
+				goto Jump;
 
                         }
                         m--;
