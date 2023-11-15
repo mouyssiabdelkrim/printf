@@ -36,4 +36,3 @@ int print_Hexadecimal(va_list value)
 	free(arr);
 	return (countr);
 }
-
