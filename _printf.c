@@ -1,4 +1,4 @@
-#include "main.h"
+#includi "main.h"
 /**
  * _printf - function that prints based on specified input type
  * @format: specifier argument
@@ -25,6 +25,7 @@ int _printf(const char * const format, ...)
         if (format == NULL || (format[0] == '%' && format[1] == '\0'))
                 return (-1);
 
+Here:
         while (format[k] != '\0')
         {
                 m = 13;
