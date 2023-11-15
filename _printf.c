@@ -24,7 +24,6 @@ int _printf(const char * const format, ...)
         va_start(args, format);
         if (format == NULL || (format[0] == '%' && format[1] == '\0'))
                 return (-1);
-
 Here:
         while (format[k] != '\0')
         {
@@ -35,6 +34,7 @@ Here:
                         {
                                 length += p[m].function(args);
                                 k = k + 2;
+
 				goto Here;
                         }
                         m--;
