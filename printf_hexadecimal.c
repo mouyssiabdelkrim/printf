@@ -21,7 +21,6 @@ int print_hexadecimal(va_list value)
 	}
 
 	counter++;
-
 	arr = malloc(counter * sizeof(int));/*mem alloc*/
 
 	for (k = 0; k < counter; k++)
@@ -38,4 +37,3 @@ int print_hexadecimal(va_list value)
 	free(arr);
 	return (counter);
 }
-
