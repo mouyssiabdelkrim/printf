@@ -4,7 +4,6 @@
  * reverse_string - function that prints a str in reverse
  * @args: args from va_arg list
  * Return: reversed string
- *
  * Done by Jacob and Abdelkrim
  */
 int reverse_string(va_list args)
@@ -20,7 +19,9 @@ int reverse_string(va_list args)
 		m++;
 
 	for (k = m - 1; k >= 0; k--)
+	{
 		_putchar(str[k]);
+	}
 
 	return (m);
 }
